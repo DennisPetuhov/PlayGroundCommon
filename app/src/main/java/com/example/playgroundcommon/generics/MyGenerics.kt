@@ -42,6 +42,7 @@ class MyList<T> : MutableList<T>, ReadOnlyList<T> {
     }
 }
 
+
 val animals = MyList<Animal>()
 val mammals: MyList<Mammal> = MyList()
 
