@@ -13,24 +13,20 @@ class House {
         rooms = quantity
     }
 
-    fun floors(quantity: Int) {
-        floors = quantity
-    }
+    fun floors(quantity: Int) {floors = quantity }
 
-    override fun toString(): String {
-        return "House(rooms=$rooms, floors=$floors)"
-    }
+    override fun toString() = "House(rooms=$rooms, floors=$floors)"
 
 }
 
 val myHouse = house {
     this.rooms(4)
-    floors(2)
+    this.floors(2)
 }
-val myHouse1= house ( block = {
-    this.rooms(8)
+val myHouse1 = house(block = {
+    rooms(8)
     floors(8)
-}  )
+})
 
 fun main() {
     println(myHouse) // House(rooms=4, floors=0)
